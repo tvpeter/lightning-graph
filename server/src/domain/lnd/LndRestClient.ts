@@ -1,6 +1,5 @@
 import https from "https";
 import { Lnd } from "./LndRestTypes";
-
 /**
  * A domain specific REST client for LND. This class makes requests using
  * the macaroon and TLS cert provided in the constructor.
@@ -15,8 +14,18 @@ export class LndRestClient {
      */
     public async getGraph(): Promise<Lnd.Graph> {
         // Exercise: use the `get` method below to call `/v1/graph` API
+        const path = `/v1/graph`;
+
+        try {
+            return await this.get(path);
+        
+        } catch (error) {
+            console.log(error);
+        }
+
+        
         // and return the results
-        return undefined;
+        // return undefined;
     }
 
     /**

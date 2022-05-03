@@ -5,7 +5,7 @@ export namespace Lnd {
         // These arrays of LightningNode and ChannelEdge objects.
         // replace_me_with_actual_properties: any;
         nodes: LightningNode [];
-        edges: ChannelEdge;
+        edges: ChannelEdge [];
     }
 
     export interface LightningNode {
