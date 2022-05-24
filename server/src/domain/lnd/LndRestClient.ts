@@ -20,7 +20,7 @@ export class LndRestClient {
             return await this.get(path);
         
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
 
         
